@@ -1,0 +1,13 @@
+.star-rating-container {
+  display: flex;
+  align-items: flex-end;
+  margin: 1em 0;
+
+  .star-rating-text {
+    color: map-get($theme-colors, light-grey-color);
+    font-family: Poppins-Medium;
+    font-size: 1em;
+    margin: 0;
+    padding-left: 1em;
+  }
+}

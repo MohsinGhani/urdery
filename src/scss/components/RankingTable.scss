@@ -1,0 +1,23 @@
+.ranking-table {
+  thead > tr > th {
+    border: none;
+  }
+
+  tbody > tr > td {
+    border: none;
+  }
+
+  .table-heading,
+  .table-data {
+    color: map-get($theme-colors, primary-color);
+    opacity: 0.6;
+    font-size: 0.85em;
+    font-family: Poppins-Regular;
+    padding: 1em 0;
+
+    .progress {
+      border-radius: 20px;
+      height: 25px;
+    }
+  }
+}

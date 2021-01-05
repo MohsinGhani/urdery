@@ -1,0 +1,101 @@
+.main-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4em 0;
+  padding: 0 1.5em;
+  flex-wrap: wrap;
+
+  @include xs {
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+  @include sm {
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+  @include md {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .main-content-left {
+    width: 50%;
+
+    @include xs {
+      width: 100%;
+    }
+    @include sm {
+      width: 100%;
+    }
+    @include md {
+      width: 100%;
+    }
+
+    .main-content-heading {
+      font-size: 3em;
+      font-family: Poppins-Bold;
+
+      @include xs {
+        font-size: 2em;
+      }
+    }
+
+    .main-content-detail-text {
+      font-size: 1.2em;
+      font-family: Poppins-Medium;
+      padding: 0.5em 0;
+      opacity: 0.6;
+      margin: 0;
+
+      @include xs {
+        font-size: 1em;
+      }
+    }
+
+    .main-content-btns {
+      display: flex;
+      align-items: baseline;
+      margin: 2em 0;
+
+      .main-content-learn-btn {
+        font-size: 1.2em;
+        font-family: Poppins-Medium;
+        padding: 1em 0;
+        margin: 0;
+        margin-left: 1em;
+
+        @include xs {
+          margin: 0;
+        }
+      }
+
+      @include xs {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+  .main-content-right {
+    width: 50%;
+
+    @include xs {
+      width: 100%;
+      margin: 2em 0;
+    }
+    @include sm {
+      width: 70%;
+      margin: 2em 0;
+    }
+    @include md {
+      width: 70%;
+      margin: 2em 0;
+    }
+
+    .side-img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

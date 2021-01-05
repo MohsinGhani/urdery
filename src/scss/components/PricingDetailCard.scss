@@ -1,0 +1,61 @@
+.pricing-detail-container {
+  width: 30%;
+  margin: 4em 0;
+
+  @include xs {
+    width: 80%;
+    margin-top: 0;
+  }
+
+  @include sm {
+    width: 70%;
+    margin-top: 0;
+  }
+
+  @include md {
+    width: 70%;
+    margin-top: 0;
+  }
+
+  .pricing-detail-tab {
+    background-color: map-get($theme-colors, green-color);
+    border-radius: 10px;
+    padding: 0.5em;
+    font-family: Poppins-Medium;
+    color: map-get($theme-colors, white-color);
+    font-size: 1.25em;
+    text-align: center;
+  }
+  .pricing-detail-card {
+    margin: 0 6px;
+    padding: 1em;
+    background-color: rgba(68, 68, 68, 0.005);
+    box-shadow: -10px 15px 30px 0px rgba(68, 68, 68, 0.05);
+    text-align: center;
+    position: relative;
+
+    .pricing-detail-list {
+      list-style-type: none;
+      margin-bottom: 0.5em;
+
+      li {
+        font-family: Poppins-Medium;
+        color: map-get($theme-colors, primary-color);
+        padding: 0.5em 0;
+      }
+    }
+  }
+
+  .bottom-btn {
+    left: 0;
+    right: 0;
+    position: absolute;
+
+    span {
+      font-size: 0.85em;
+    }
+    .price-text {
+      color: map-get($theme-colors, yellow-color);
+    }
+  }
+}

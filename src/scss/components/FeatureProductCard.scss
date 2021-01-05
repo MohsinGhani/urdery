@@ -1,0 +1,92 @@
+.feature-card-container {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+
+  @include xs {
+    flex-direction: column;
+  }
+  @include sm {
+    flex-direction: column;
+  }
+  @include md {
+    flex-direction: column;
+  }
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+
+    @include xs {
+      flex-direction: column;
+    }
+    @include sm {
+      flex-direction: column;
+    }
+    @include md {
+      flex-direction: column;
+    }
+  }
+
+  .feature-card-img-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($theme-colors, feature-card-bg-color);
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 6px 1px 0px rgba(68, 68, 68, 0.2);
+
+    .feature-card-img {
+      padding: 1.25em;
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    @include xs {
+      margin-bottom: 2em;
+    }
+    @include sm {
+      margin-bottom: 2em;
+    }
+    @include md {
+      margin-bottom: 2em;
+    }
+  }
+  .feature-product-detail-section {
+    width: 57.5%;
+    padding: 0px 4em;
+
+    @include xs {
+      width: 100%;
+    }
+    @include sm {
+      width: 100%;
+    }
+    @include md {
+      width: 80%;
+    }
+
+    .feature-product-heading {
+      font-family: Poppins-SemiBold;
+      font-size: 2em;
+      color: map-get($theme-colors, primary-color);
+      padding-bottom: 1rem;
+
+      @include xs {
+        padding-bottom: 0.5rem;
+      }
+      @include sm {
+        padding-bottom: 0.5rem;
+      }
+      @include md {
+        padding-bottom: 0.5rem;
+      }
+    }
+    .feature-product-text {
+      font-size: 1em;
+      font-family: Poppins-Medium;
+      color: map-get($theme-colors, primary-color);
+      opacity: 0.6;
+    }
+  }
+}

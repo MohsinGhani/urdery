@@ -1,0 +1,75 @@
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5em 0;
+
+  .signin-heading {
+    font-family: Poppins-SemiBold;
+    color: map-get($theme-colors, primary-color);
+    font-size: 2em;
+    margin-bottom: 2em;
+
+    @include xs {
+      font-size: 1.5em;
+    }
+  }
+
+  .signin-fields {
+    width: 50%;
+
+    @include xs {
+      width: 100%;
+    }
+    @include sm {
+      width: 85%;
+    }
+    @include md {
+      width: 75%;
+    }
+  }
+
+  .signin-links-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 2em 0;
+
+    @include xs {
+      width: 100%;
+    }
+    @include sm {
+      width: 85%;
+    }
+    @include md {
+      width: 75%;
+    }
+
+    .signin-link-text {
+      font-family: Poppins-Medium;
+      color: map-get($theme-colors, primary-color);
+      font-size: 1.25em;
+      margin: 0;
+
+      @include xs {
+        font-size: 1em;
+      }
+    }
+
+    .signin-link-ref {
+      font-family: Poppins-Medium;
+      color: map-get($theme-colors, green-color);
+      font-size: 1.25em;
+
+      @include xs {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .primary-btn {
+    padding: 0.5em 3em;
+  }
+}

@@ -1,0 +1,22 @@
+.progress-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+
+  .progress-bar-container {
+    width: 75%;
+
+    .progress {
+      border: 1px solid rgba(69, 69, 69, 0.14);
+      background-color: map-get($theme-colors, white-color);
+      border-radius: 20px;
+      height: 25px;
+    }
+    .progress-text {
+      color: map-get($theme-colors, light-grey-color);
+      font-family: Poppins-Medium;
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+}

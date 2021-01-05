@@ -1,0 +1,75 @@
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+
+  @include xs {
+    align-items: center;
+  }
+  @include sm {
+    align-items: center;
+  }
+  @include md {
+    align-items: center;
+  }
+
+  .nav-left-links {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-left: 6em;
+
+    @include xs {
+      margin: 0;
+      flex-direction: column;
+    }
+    @include sm {
+      margin: 0;
+      flex-direction: column;
+    }
+    @include md {
+      margin: 0;
+      flex-direction: column;
+    }
+  }
+
+  .nav-right-links {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+
+    @include xs {
+      flex-direction: column;
+    }
+    @include sm {
+      flex-direction: column;
+    }
+    @include md {
+      flex-direction: column;
+    }
+  }
+
+  .nav-text {
+    color: map-get($theme-colors, primary-color);
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: Poppins-Medium;
+    place-self: center;
+
+    @include xs {
+      padding: 0.25em 0;
+    }
+    @include sm {
+      padding: 0.25em 0;
+    }
+    @include md {
+      padding: 0.25em 0;
+    }
+  }
+
+  .active-navlink {
+    color: map-get($theme-colors, green-color);
+    font-family: Poppins-Bold;
+  }
+}

@@ -1,0 +1,26 @@
+.company-img-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2em 0 5em;
+
+  @include xs {
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .company-img {
+    object-fit: contain;
+
+    @include xs {
+      width: 80px;
+      padding: 0 1em;
+
+      &:last-child {
+        padding-top: 1em;
+      }
+    }
+  }
+}

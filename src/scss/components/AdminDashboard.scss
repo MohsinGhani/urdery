@@ -1,0 +1,324 @@
+.admin-left-pannel-container {
+  .main-logo {
+    margin: 2em 1.5em;
+  }
+
+  .side-nav-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .side-nav-text {
+      padding: 1em 2em;
+      color: #e2e2e2;
+      margin-bottom: 1em;
+      text-decoration: none;
+    }
+
+    .side-nav-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 1em;
+
+      @include lg {
+        margin-right: 0.25em;
+      }
+    }
+
+    .active-side-nav {
+      padding: 1em 2em;
+      background-color: map-get($theme-colors, green-color);
+      border-radius: 0 50px 50px 0;
+      color: map-get($theme-colors, white-color);
+      padding-right: 6em;
+    }
+  }
+}
+
+#sidebar-wrapper {
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-container {
+  padding: 2em 4em;
+  box-shadow: 0px -20px 10px 0px #aaaaaa;
+
+  .dashboard-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .welcome-text {
+      color: map-get($theme-colors, primary-color);
+      font-size: 2em;
+      opacity: 0.5;
+      font-family: Poppins-Medium;
+    }
+    .header-section-profile {
+      display: flex;
+      align-items: center;
+
+      .bell-icon {
+        width: 2.5em;
+        height: 2.5em;
+      }
+      .profile-name {
+        color: map-get($theme-colors, primary-color);
+        margin: 0;
+        padding: 0 1em;
+      }
+      .avtar-icon {
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .down-icon {
+        padding-left: 1em;
+        width: 1.5em;
+      }
+    }
+  }
+  .dashboard-search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+
+    .search-text {
+      color: map-get($theme-colors, primary-color);
+      font-size: 1.5em;
+      font-family: Poppins-Medium;
+    }
+  }
+
+  .product-graph-view-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 2em 0;
+    margin-top: 4em;
+
+    .sales-card {
+      width: 35%;
+      box-shadow: 0px 0px 30px -25px #aaaaaa;
+      border-radius: 20px;
+      padding: 1em 1.5em;
+
+      .sales-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sales-heading {
+          color: map-get($theme-colors, light-grey-color);
+          font-family: Poppins-Medium;
+          font-size: 1.25em;
+          margin: 0;
+        }
+        .sales-detail {
+          color: map-get($theme-colors, light-grey-color);
+          opacity: 0.35;
+          font-family: Poppins-Medium;
+          margin: 0;
+          font-size: 0.85em;
+        }
+      }
+
+      .product-list {
+        list-style-type: none;
+        margin: 1em 0;
+
+        li {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0.5em 0;
+
+          .dot-icon {
+            width: 8px;
+            height: 8px;
+          }
+          .product-title {
+            color: map-get($theme-colors, light-grey-color);
+            font-size: 1em;
+            margin: 0;
+            padding-left: 0.5em;
+          }
+        }
+      }
+
+      .sales-btn-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .sales-btn {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-color: rgba(51, 51, 51, 0.1);
+          padding: 0.5em 1em;
+          border-radius: 10px;
+
+          .dot-icon {
+            width: 8px;
+            height: 8px;
+          }
+          .product-title {
+            color: map-get($theme-colors, light-grey-color);
+            font-size: 1em;
+            margin: 0;
+            padding-left: 0.5em;
+          }
+        }
+      }
+    }
+    .order-card {
+      width: 60%;
+      box-shadow: 0px 0px 30px -25px #aaaaaa;
+      border-radius: 20px;
+      padding: 1em 1.5em;
+
+      .order-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .order-heading {
+          color: map-get($theme-colors, light-grey-color);
+          font-family: Poppins-Medium;
+          font-size: 1.25em;
+          margin: 0;
+        }
+
+        .order-details-section {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 40%;
+
+          .order-detail {
+            color: map-get($theme-colors, light-grey-color);
+            opacity: 0.35;
+            font-family: Poppins-Medium;
+            margin: 0;
+            font-size: 0.85em;
+          }
+        }
+      }
+
+      .order-card-chart-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em 0;
+
+        .order-card-chart-right-text {
+          .order-card-text-section {
+            &:first-child {
+              margin-bottom: 0.5em;
+            }
+            .order-card-primary-text {
+              color: map-get($theme-colors, light-grey-color);
+              opacity: 0.35;
+              font-family: Poppins-Regular;
+              margin: 0;
+              font-size: 1em;
+            }
+            .order-card-secondary-text {
+              color: map-get($theme-colors, light-grey-color);
+              font-family: Poppins-Regular;
+              font-size: 1.25em;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .customer-rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 2em 0;
+    margin-top: 4em;
+
+    .customer-rating-card {
+      width: 35%;
+      box-shadow: 0px 0px 30px -25px #aaaaaa;
+      border-radius: 20px;
+      padding: 1em 1.5em;
+
+      .customer-rating-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .customer-rating-heading {
+          color: map-get($theme-colors, light-grey-color);
+          font-family: Poppins-Medium;
+          font-size: 1.25em;
+          margin: 0;
+        }
+        .customer-rating-detail {
+          color: map-get($theme-colors, light-grey-color);
+          opacity: 0.35;
+          font-family: Poppins-Medium;
+          margin: 0;
+          font-size: 0.85em;
+        }
+      }
+    }
+    .customer-progress-card {
+      width: 60%;
+      box-shadow: 0px 0px 30px -25px #aaaaaa;
+      border-radius: 20px;
+      padding: 1em 1.5em;
+    }
+  }
+
+  .in-active-container {
+    .in-active-text {
+      color: map-get($theme-colors, primary-color);
+      font-size: 2em;
+      font-family: Poppins-Medium;
+      margin: 2em 0;
+    }
+  }
+}
+
+.order-table {
+  thead > tr > th {
+    border: none;
+  }
+
+  tbody > tr > td {
+    border: none;
+  }
+
+  .table-heading {
+    color: map-get($theme-colors, primary-color);
+    opacity: 0.6;
+    font-size: 0.85em;
+    font-family: Poppins-Regular;
+  }
+  .table-data {
+    color: map-get($theme-colors, primary-color);
+    font-family: Poppins-Regular;
+    font-size: 0.95em;
+  }
+}

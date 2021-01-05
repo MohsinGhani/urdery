@@ -1,0 +1,43 @@
+.primary-btn {
+  font-size: 1.2em;
+  font-family: Poppins-Bold;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: map-get($theme-colors, green-color);
+  color: map-get($theme-colors, white-color);
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: capitalize;
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transition: 0.5s;
+    background-color: map-get($theme-colors, bluey-grey-color);
+  }
+}
+
+.secondary-btn {
+  font-size: 1.2em;
+  font-family: Poppins-Bold;
+  padding: 0.5em 1em;
+  min-width: 95px;
+  min-height: 33px;
+  border: 2px solid map-get($theme-colors, green-color);
+  background-color: map-get($theme-colors, white-color);
+  color: map-get($theme-colors, primary-color);
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: capitalize;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transition: 0.5s;
+    background-color: map-get($theme-colors, green-color);
+    color: map-get($theme-colors, white-color);
+  }
+}

@@ -1,0 +1,27 @@
+.layout-wrapper {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  height: inherit;
+  // padding: 0 5%;
+
+  @include xs {
+    padding: 0 5%;
+  }
+
+  @include sm {
+    padding: 0 5%;
+  }
+
+  @include md {
+    padding: 0 5%;
+  }
+
+  @include lg {
+    padding: 0 5%;
+  }
+
+  @include xl {
+    padding: 0 5%;
+  }
+}

@@ -1,0 +1,17 @@
+.footer-list-section {
+  list-style-type: none;
+
+  .footer-list-heading {
+    font-size: 1.1em;
+    font-family: Poppins-Medium;
+    text-transform: capitalize;
+    padding-bottom: 1em;
+  }
+  .footer-list {
+    padding: 0.5em 0;
+
+    &:last-child {
+      margin-bottom: 3em;
+    }
+  }
+}

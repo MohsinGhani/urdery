@@ -1,0 +1,92 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5em 0;
+
+  .signup-heading {
+    font-family: Poppins-SemiBold;
+    color: map-get($theme-colors, primary-color);
+    font-size: 2em;
+    margin-bottom: 2em;
+
+    @include xs {
+      font-size: 1.5em;
+    }
+  }
+
+  .input-filed-width {
+    width: 50%;
+
+    @include xs {
+      width: 100%;
+    }
+    @include sm {
+      width: 85%;
+    }
+    @include md {
+      width: 75%;
+    }
+  }
+  .signup-fields {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include xs {
+      flex-direction: column;
+    }
+    @include sm {
+      flex-direction: column;
+    }
+    @include md {
+      flex-direction: column;
+    }
+  }
+
+  .signup-links-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 2em 0;
+
+    @include xs {
+      width: 100%;
+    }
+    @include sm {
+      width: 85%;
+    }
+    @include md {
+      width: 75%;
+    }
+
+    .signup-link-text {
+      font-family: Poppins-Medium;
+      color: map-get($theme-colors, primary-color);
+      font-size: 1.25em;
+      margin: 0;
+
+      @include xs {
+        font-size: 1em;
+      }
+    }
+
+    .signup-link-ref {
+      font-family: Poppins-Medium;
+      color: map-get($theme-colors, green-color);
+      font-size: 1.25em;
+
+      @include xs {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .primary-btn {
+      margin-top: 2em;
+    padding: 0.5em 3em;
+  }
+}

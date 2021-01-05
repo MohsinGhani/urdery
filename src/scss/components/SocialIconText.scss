@@ -1,0 +1,28 @@
+.social-icon-text-container {
+  text-align: center;
+
+  @include xs {
+    margin-bottom: 1em;
+  }
+  @include sm {
+    margin-bottom: 1em;
+  }
+
+  .social-icon {
+    width: 20px;
+  }
+
+  .soical-text {
+    margin-top: 0.5em;
+    color: map-get($theme-colors, primary-color);
+    font-size: 1.25em;
+    font-family: Poppins-Medium;
+  }
+
+  .active-soical-text {
+    margin-top: 0.5em;
+    color: map-get($theme-colors, green-color);
+    font-size: 1.25em;
+    font-family: Poppins-Medium;
+  }
+}

@@ -1,0 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins-Regular", sans-serif;
+  color: map-get($theme-colors, primary-color);
+}
+
+.parent-wrapper {
+  display: flex;
+}

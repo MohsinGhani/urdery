@@ -1,0 +1,15 @@
+.pricing-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include xs {
+    justify-content: center;
+  }
+  @include sm {
+    justify-content: center;
+  }
+  @include md {
+    justify-content: center;
+  }
+}

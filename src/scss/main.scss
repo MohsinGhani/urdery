@@ -1,0 +1,41 @@
+// Settings
+@import "./settings/global";
+@import "./settings/fonts";
+@import "./settings/colors";
+
+// Tools
+@import "./tools/mixins";
+
+// Generic
+@import "./generic/reset";
+@import "./generic/normalize";
+
+// Elements
+
+// Objects
+
+// Components
+@import "./components/Header.scss";
+@import "./components/LayoutWrapper.scss";
+@import "./components/Button.scss";
+@import "./components/MainContentImg.scss";
+@import "./components/HomePage.scss";
+@import "./components/CompanyLists.scss";
+@import "./components/Footer.scss";
+@import "./components/FooterList.scss";
+@import "./components/FeatureProductCard.scss";
+@import "./components/PricingDetailCard.scss";
+@import "./components/PricingPage.scss";
+@import "./components/SocialIconText.scss";
+@import "./components/SupportPage.scss";
+@import "./components/ChatBox.scss";
+@import "./components/MsgBoxImg.scss";
+@import "./components/InputField.scss";
+@import "./components/SignInPage.scss";
+@import "./components/SignUpPage.scss";
+@import "./components/AdminDashboard.scss";
+@import "./components/StarRating.scss";
+@import "./components/ProgressBarTable.scss";
+@import "./components/RankingTable.scss";
+
+// Utilities

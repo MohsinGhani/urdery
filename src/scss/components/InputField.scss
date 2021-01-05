@@ -1,0 +1,18 @@
+.input-field-container {
+  .input-label {
+    font-family: Poppins-Medium;
+    font-size: 1em;
+    color: map-get($theme-colors, primary-color);
+  }
+
+  .input-field {
+    color: map-get($theme-colors, primary-color);
+
+    &:focus {
+      color: map-get($theme-colors, primary-color);
+      border-color: rgba(112, 112, 112, 0.25);
+      outline: 0;
+      box-shadow: 0px 0px 1px 1px rgba(112, 112, 112, 0.25);
+    }
+  }
+}
