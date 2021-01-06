@@ -30,7 +30,18 @@
       background-color: map-get($theme-colors, green-color);
       border-radius: 0 50px 50px 0;
       color: map-get($theme-colors, white-color);
-      padding-right: 6em;
+      padding-right: 2.5em;
+
+      @include md {
+        padding-right: 4em;
+      }
+
+      @include lg {
+        padding-right: 6em;
+      }
+      @include customRange(1200, 1224) {
+        padding-right: 2em;
+      }
     }
   }
 }
@@ -40,6 +51,10 @@
   width: 100%;
   padding: 0;
   margin: 0;
+
+  @include xl{
+    width: 25%;
+  }
 }
 #page-content-wrapper {
   min-width: 0;
@@ -52,20 +67,39 @@
   padding: 2em 4em;
   box-shadow: 0px -20px 10px 0px #aaaaaa;
 
+  @include md {
+    padding: 1em 2em;
+  }
+
+  // @include customRange(1080, 1199){}
+
   .dashboard-header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include md {
+      flex-direction: column;
+      align-items: inherit;
+    }
 
     .welcome-text {
       color: map-get($theme-colors, primary-color);
       font-size: 2em;
       opacity: 0.5;
       font-family: Poppins-Medium;
+
+      @include lg {
+        font-size: 1.75em;
+      }
     }
     .header-section-profile {
       display: flex;
       align-items: center;
+
+      @include md {
+        justify-content: flex-end;
+      }
 
       .bell-icon {
         width: 2.5em;
@@ -110,11 +144,25 @@
     margin: 2em 0;
     margin-top: 4em;
 
+    @include md {
+      flex-direction: column;
+    }
+    @include lg {
+      flex-direction: column;
+    }
+
     .sales-card {
-      width: 35%;
+      width: 45%;
       box-shadow: 0px 0px 30px -25px #aaaaaa;
       border-radius: 20px;
       padding: 1em 1.5em;
+
+      @include md {
+        width: 100%;
+      }
+      @include lg {
+        width: 100%;
+      }
 
       .sales-card-header {
         display: flex;
@@ -186,10 +234,17 @@
       }
     }
     .order-card {
-      width: 60%;
+      width: 50%;
       box-shadow: 0px 0px 30px -25px #aaaaaa;
       border-radius: 20px;
       padding: 1em 1.5em;
+
+      @include md {
+        width: 100%;
+      }
+      @include lg {
+        width: 100%;
+      }
 
       .order-card-header {
         display: flex;
@@ -257,11 +312,25 @@
     margin: 2em 0;
     margin-top: 4em;
 
+    @include md {
+      flex-direction: column;
+    }
+    @include lg {
+      flex-direction: column;
+    }
+
     .customer-rating-card {
-      width: 35%;
+      width: 45%;
       box-shadow: 0px 0px 30px -25px #aaaaaa;
       border-radius: 20px;
       padding: 1em 1.5em;
+
+      @include md {
+        width: 100%;
+      }
+      @include lg {
+        width: 100%;
+      }
 
       .customer-rating-card-header {
         display: flex;
@@ -284,10 +353,17 @@
       }
     }
     .customer-progress-card {
-      width: 60%;
+      width: 50%;
       box-shadow: 0px 0px 30px -25px #aaaaaa;
       border-radius: 20px;
       padding: 1em 1.5em;
+
+      @include md {
+        width: 100%;
+      }
+      @include lg {
+        width: 100%;
+      }
     }
   }
 

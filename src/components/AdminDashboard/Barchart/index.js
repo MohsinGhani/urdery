@@ -16,7 +16,7 @@ const Barchart = ({ data }) => {
 
   return (
     <Chart
-      width={"500px"}
+      width={"250px"}
       height={"250px"}
       chartType="Bar"
       loader={<div>Loading Chart</div>}
