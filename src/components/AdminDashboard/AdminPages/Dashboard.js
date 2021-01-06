@@ -186,20 +186,6 @@ const progressBarData = [
   },
 ];
 
-let barData = [
-  ["Jun", ""],
-  ["Jul", 10],
-  ["Aug", 20],
-  ["Sep", 15],
-  ["Oct", 30],
-  ["Nov", 25],
-  ["Dec", 20],
-  ["Jan", 30],
-  ["Feb", 10],
-  ["Mar", 40],
-  ["Apr", 36],
-];
-
 const activeTableDetails = [
   {
     orderNo: "#DO-00003",

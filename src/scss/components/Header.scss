@@ -1,75 +1,83 @@
-.navbar-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
+.navbar-container {
+  position: fixed;
   width: 100%;
-
-  @include xs {
-    align-items: center;
-  }
-  @include sm {
-    align-items: center;
-  }
-  @include md {
-    align-items: center;
-  }
-
-  .nav-left-links {
+  background-color: map-get($theme-colors, white-color);
+  margin-bottom: 3em;
+  z-index: 1;
+  
+  .navbar-nav {
     display: flex;
     justify-content: space-between;
-    width: 35%;
-    margin-left: 6em;
+    padding: 0;
+    width: 100%;
 
     @include xs {
-      margin: 0;
-      flex-direction: column;
+      align-items: center;
     }
     @include sm {
-      margin: 0;
-      flex-direction: column;
+      align-items: center;
     }
     @include md {
-      margin: 0;
-      flex-direction: column;
+      align-items: center;
     }
-  }
 
-  .nav-right-links {
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
+    .nav-left-links {
+      display: flex;
+      justify-content: space-between;
+      width: 35%;
+      margin-left: 6em;
 
-    @include xs {
-      flex-direction: column;
+      @include xs {
+        margin: 0;
+        flex-direction: column;
+      }
+      @include sm {
+        margin: 0;
+        flex-direction: column;
+      }
+      @include md {
+        margin: 0;
+        flex-direction: column;
+      }
     }
-    @include sm {
-      flex-direction: column;
-    }
-    @include md {
-      flex-direction: column;
-    }
-  }
 
-  .nav-text {
-    color: map-get($theme-colors, primary-color);
-    font-size: 1.2em;
-    text-decoration: none;
-    font-family: Poppins-Medium;
-    place-self: center;
+    .nav-right-links {
+      display: flex;
+      justify-content: space-between;
+      width: 45%;
 
-    @include xs {
-      padding: 0.25em 0;
+      @include xs {
+        flex-direction: column;
+      }
+      @include sm {
+        flex-direction: column;
+      }
+      @include md {
+        flex-direction: column;
+      }
     }
-    @include sm {
-      padding: 0.25em 0;
-    }
-    @include md {
-      padding: 0.25em 0;
-    }
-  }
 
-  .active-navlink {
-    color: map-get($theme-colors, green-color);
-    font-family: Poppins-Bold;
+    .nav-text {
+      color: map-get($theme-colors, primary-color);
+      font-size: 1.2em;
+      text-decoration: none;
+      font-family: Poppins-Medium;
+      place-self: center;
+
+      @include xs {
+        padding: 0.25em 0;
+      }
+      @include sm {
+        padding: 0.25em 0;
+      }
+      @include md {
+        padding: 0.25em 0;
+      }
+    }
+
+    .active-navlink {
+      color: map-get($theme-colors, green-color);
+      font-family: Poppins-Bold;
+    }
   }
 }
